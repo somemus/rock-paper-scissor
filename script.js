@@ -4,7 +4,7 @@ function getRandomInt(max) {
 
 function getComputerChoice (){
     
-    let choice = console.log(getRandomInt(3));
+    let choice = getRandomInt(3);
     switch(choice) {
         case 0:
             return('scissor')
