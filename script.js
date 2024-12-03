@@ -3,16 +3,21 @@ function getRandomInt(max) {
 }
 
 function getComputerChoice (){
-    let choice = getRandomInt(3);
+    
+    let choice = console.log(getRandomInt(3));
     switch(choice) {
-        case '0':
+        case 0:
             return('scissor')
-        case '1':
+            break;
+        case 1:
             return('rock')
-        case '2':
+            break;
+        case 2:
             return('paper')
+            break;
     }
       
 }
 
 console.log(getComputerChoice());
+console.log(getRandomInt(3));
