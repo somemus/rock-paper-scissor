@@ -1,6 +1,9 @@
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
 
 function getComputerChoice (){
-    let choice = Math.floor(Math.random() * 3);
+    let choice = getRandomInt(3);
     switch(choice) {
         case '0':
             return('scissor')
@@ -9,10 +12,7 @@ function getComputerChoice (){
         case '2':
             return('paper')
     }
-   
-
-   
+      
 }
 
-b = getComputerChoice()
-console.log(b)
+console.log(getComputerChoice());
