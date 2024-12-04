@@ -33,19 +33,45 @@ let humanScore = 0;
 let computerScore = 0;
 
 
-let a = getComputerChoice();
-let b = getHumanChoice();
 
-function playRound(a,b) {
-    
-
-    if (a == b){
-        // repeat game
-        return "ok"
+function playRound(humanChoice, computerChoice) {
+    // your code here!
+    if (humanChoice == computerChoice){
+        console.log("Stalemate, buddy!")
+    }
+    else if(humanChoice == "scissor" && computerChoice == "rock"){
+        ++computerScore;
+        console.log("Sorry, you lost. Rock crushes scissors")
+    }
+    else if(humanChoice == "scissor" && computerChoice == "paper"){
+        ++humanScore;
+        console.log("You win! Scissor cuts paper.")
+    }
+    else if(humanChoice=="rock" && computerChoice == "scissor"){
+        ++humanScore;
+        console.log("You win! Rock smashes scissor.")
     }
 
-    else if(a == rock && b == scissor){
-    +computerScore;
-    return "Sorry, you lost."
+    else if (humanChoice == "rock" && computerChoice == "paper"){
+        ++computerScore;
+        console.log("You lose! Paper shushes rock.")
     }
-}
+
+    else if (humanChoice == "paper" && computerChoice == "rock") {
+        ++humanScore;
+        console.log("You win! Paper suffocates rock, huh.")
+    }
+    else if (humanChoice == "paper" && computerChoice == "scissor") {
+        ++computerScore;
+        console.log("You lose! Snip, snip the paper.")
+
+    }
+
+
+  }
+  
+  const humanSelection = getHumanChoice();
+  const computerSelection = getComputerChoice();
+  
+  playRound(humanSelection, computerSelection);
+  
