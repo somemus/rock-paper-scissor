@@ -20,4 +20,9 @@ function getComputerChoice (){
 }
 
 console.log(getComputerChoice());
-console.log(getRandomInt(3));
+
+function getHumanChoice (a) {
+    return a
+}
+
+console.log(getHumanChoice("become"))
