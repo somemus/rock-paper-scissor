@@ -19,14 +19,14 @@ function getComputerChoice (){
       
 }
 
-console.log(getComputerChoice());
+// console.log(getComputerChoice());
 
 function getHumanChoice () {
     let answer = prompt("Rock, paper, scissor?")
     return answer.toLowerCase()
 }
 
-console.log(getHumanChoice())
+// console.log(getHumanChoice())
 
 
 let humanScore = 0;
@@ -66,7 +66,9 @@ function playRound(humanChoice, computerChoice) {
         console.log("You lose! Snip, snip the paper.")
 
     }
-    else {console.log("Try again.")}
+    else {
+        console.log("Try again.")
+    }
 
 
   }
