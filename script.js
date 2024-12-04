@@ -21,8 +21,9 @@ function getComputerChoice (){
 
 console.log(getComputerChoice());
 
-function getHumanChoice (a) {
-    return a
+function getHumanChoice () {
+    let answer = prompt("Rock, paper, scissor?")
+    return answer.toLowerCase()
 }
 
-console.log(getHumanChoice("become"))
+console.log(getHumanChoice())
