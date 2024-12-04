@@ -66,6 +66,7 @@ function playRound(humanChoice, computerChoice) {
         console.log("You lose! Snip, snip the paper.")
 
     }
+    else {console.log("Try again.")}
 
 
   }
