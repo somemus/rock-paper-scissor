@@ -31,3 +31,18 @@ console.log(getHumanChoice())
 
 let humanScore = 0;
 let computerScore = 0;
+
+function playRound(a,b) {
+    let a = getComputerChoice;
+    let b = getHumanChoice;
+
+    if (a == b){
+        // repeat game
+        return "ok"
+    }
+
+    else (a == rock && b == scissor){
+    +computerScore;
+    return "Sorry, you lost."
+    }
+}
