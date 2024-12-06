@@ -73,31 +73,33 @@ function playRound(humanChoice, computerChoice) {
 
   }
   
-  const humanSelection = getHumanChoice();
-  const computerSelection = getComputerChoice();
+//   let humanSelection = getHumanChoice();
+//   let computerSelection = getComputerChoice();
   
 //   playRound(humanSelection, computerSelection);
   
 
 
   function playGame() {
+    let humanSelection = getHumanChoice();
+    let computerSelection = getComputerChoice();
     playRound(humanSelection, computerSelection); 
 
-    getHumanChoice();
-    getComputerChoice();  
-    playRound(humanSelection, computerSelection);
+    let a = getHumanChoice();
+    let b = getComputerChoice();  
+    playRound(a, b);
 
-    getHumanChoice();
-    getComputerChoice();  
-    playRound(humanSelection, computerSelection);
+    // getHumanChoice();
+    // getComputerChoice();  
+    // playRound(humanSelection, computerSelection);
 
-    getHumanChoice();
-    getComputerChoice();  
-    playRound(humanSelection, computerSelection);
+    // getHumanChoice();
+    // getComputerChoice();  
+    // playRound(humanSelection, computerSelection);
 
-    getHumanChoice();
-    getComputerChoice();  
-    playRound(humanSelection, computerSelection);
+    // getHumanChoice();
+    // getComputerChoice();  
+    // playRound(humanSelection, computerSelection);
 
     
     console.log("Score\n" +
