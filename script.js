@@ -86,6 +86,9 @@ function playRound(humanChoice, computerChoice) {
     playRound(humanSelection, computerSelection);
     playRound(humanSelection, computerSelection);
     playRound(humanSelection, computerSelection);
+    console.log("Score\n" +
+        "You:"+humanScore+"\n"+
+        "PC:"+computerScore)
   }
 
   playGame();
