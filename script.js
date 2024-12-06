@@ -106,13 +106,13 @@ function playRound(humanChoice, computerChoice) {
         "PC:"+computerScore
 
     if (humanScore>computerScore){
-        console.log(score+"Congrats! You win!")
+        console.log(score+"\nCongrats! You win!")
     }
     else if (computerScore>humanScore){
-        console.log(score+"Dang. You lost! Better luck next time.")
+        console.log(score+"\nDang. You lost! Better luck next time.")
     }
     else if(humanScore==computerScore){
-        console.log(score+"That's a close one. Play again.")
+        console.log(score+"\nThat's a close one. Play again.")
     }
     else {console.log(error)}
     
