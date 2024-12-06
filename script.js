@@ -81,14 +81,17 @@ function playRound(humanChoice, computerChoice) {
 
 
   function playGame() {
+    playRound(humanSelection, computerSelection); 
+    getHumanChoice();
+    getComputerChoice();  
     playRound(humanSelection, computerSelection);
-    playRound(humanSelection, computerSelection);
-    playRound(humanSelection, computerSelection);
-    playRound(humanSelection, computerSelection);
-    playRound(humanSelection, computerSelection);
+    
     console.log("Score\n" +
         "You:"+humanScore+"\n"+
         "PC:"+computerScore)
   }
 
   playGame();
+
+
+//   pausing and creating pseudocode- drawing input to playRound clarified what to do
