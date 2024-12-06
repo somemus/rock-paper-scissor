@@ -89,22 +89,33 @@ function playRound(humanChoice, computerChoice) {
     let b = getComputerChoice();  
     playRound(a, b);
 
-    // getHumanChoice();
-    // getComputerChoice();  
-    // playRound(humanSelection, computerSelection);
+    let c = getHumanChoice();
+    let d = getComputerChoice();  
+    playRound(c, d);
 
-    // getHumanChoice();
-    // getComputerChoice();  
-    // playRound(humanSelection, computerSelection);
+    let e = getHumanChoice();
+    let f = getComputerChoice();  
+    playRound(e, f);
 
-    // getHumanChoice();
-    // getComputerChoice();  
-    // playRound(humanSelection, computerSelection);
+    let g = getHumanChoice();
+    let h = getComputerChoice();  
+    playRound(g, h);
+
+    score = "Score\n" +
+        "You:"+humanScore+"\n"+
+        "PC:"+computerScore
+
+    if (humanScore>computerScore){
+        console.log(score+"Congrats! You win!")
+    }
+    else if (computerScore>humanScore){
+        console.log(score+"Dang. You lost! Better luck next time.")
+    }
+    else if(humanScore==computerScore){
+        console.log(score+"That's a close one. Play again.")
+    }
 
     
-    console.log("Score\n" +
-        "You:"+humanScore+"\n"+
-        "PC:"+computerScore)
   }
 
   playGame();
