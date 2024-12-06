@@ -82,9 +82,23 @@ function playRound(humanChoice, computerChoice) {
 
   function playGame() {
     playRound(humanSelection, computerSelection); 
+
     getHumanChoice();
     getComputerChoice();  
     playRound(humanSelection, computerSelection);
+
+    getHumanChoice();
+    getComputerChoice();  
+    playRound(humanSelection, computerSelection);
+
+    getHumanChoice();
+    getComputerChoice();  
+    playRound(humanSelection, computerSelection);
+
+    getHumanChoice();
+    getComputerChoice();  
+    playRound(humanSelection, computerSelection);
+
     
     console.log("Score\n" +
         "You:"+humanScore+"\n"+
