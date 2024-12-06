@@ -37,33 +37,33 @@ let computerScore = 0;
 function playRound(humanChoice, computerChoice) {
     // your code here!
     if (humanChoice == computerChoice){
-        console.log("Stalemate, buddy!")
+        console.log("A draw")
     }
     else if(humanChoice == "scissor" && computerChoice == "rock"){
         ++computerScore;
-        console.log("Sorry, you lost. Rock crushes scissors")
+        console.log("Your scissors got crushed by my rock.")
     }
     else if(humanChoice == "scissor" && computerChoice == "paper"){
         ++humanScore;
-        console.log("You win! Scissor cuts paper.")
+        console.log("Your scissor cut my paper.")
     }
     else if(humanChoice=="rock" && computerChoice == "scissor"){
         ++humanScore;
-        console.log("You win! Rock smashes scissor.")
+        console.log("Your rock smashed my scissor.")
     }
 
     else if (humanChoice == "rock" && computerChoice == "paper"){
         ++computerScore;
-        console.log("You lose! Paper shushes rock.")
+        console.log("My paper shushed your rock.")
     }
 
     else if (humanChoice == "paper" && computerChoice == "rock") {
         ++humanScore;
-        console.log("You win! Paper suffocates rock, huh.")
+        console.log("Your paper suffocated my rock.")
     }
     else if (humanChoice == "paper" && computerChoice == "scissor") {
         ++computerScore;
-        console.log("You lose! Snip, snip the paper.")
+        console.log("My scissor cut your the paper.")
 
     }
     else {
@@ -114,7 +114,7 @@ function playRound(humanChoice, computerChoice) {
     else if(humanScore==computerScore){
         console.log(score+"That's a close one. Play again.")
     }
-
+    else {console.log(error)}
     
   }
 
